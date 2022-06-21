@@ -1,5 +1,3 @@
-function App() {
-	return <h1>hello</h1>;
-}
-
-export default App;
+export default () => {
+	return <h1 className="text-4xl">Hellow</h1>;
+};
