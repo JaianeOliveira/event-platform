@@ -1,11 +1,4 @@
-import { Header, Sidebar, Video, Lesson } from './components';
+import { Event } from './pages';
 
-const App = () => (
-	<>
-		<Header />
-		<Sidebar />
-		<Video />
-		<Lesson />
-	</>
-);
+const App = () => <Event />;
 export default App;
