@@ -42,7 +42,7 @@ interface VideoProps {
 }
 
 const Video = ({ lessonSlug }: VideoProps) => {
-	const { data } = useQuery<GetLessonBySlugResponse>(
+	const { data, networkStatus } = useQuery<GetLessonBySlugResponse>(
 		GET_LESSONS_BY_SLUG_QUERY,
 		{
 			variables: {
@@ -50,6 +50,7 @@ const Video = ({ lessonSlug }: VideoProps) => {
 			},
 		}
 	);
+	console.log(networkStatus);
 
 	if (!data) {
 		return (
