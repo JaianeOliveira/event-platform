@@ -20,6 +20,7 @@ const Button = ({
 	return (
 		<a
 			href={link}
+			target="_blank"
 			className={variant === 'primary' ? primaryClasses : secondaryClasses}
 		>
 			{icon}

@@ -65,6 +65,7 @@ const Video = ({ lessonSlug }: VideoProps) => {
 					</div>
 					<div className="flex flex-col gap-4">
 						<Button
+							link="https://discord-service.rocketseat.dev/signin/ignite-lab"
 							text="Comunidade do Discord"
 							icon={<DiscordLogo size={24} />}
 						/>
@@ -77,7 +78,8 @@ const Video = ({ lessonSlug }: VideoProps) => {
 				</div>
 				<div className="gap-8 mt-20 grid grid-cols-2">
 					<a
-						href="#"
+						href="https://efficient-sloth-d85.notion.site/Material-complementar-86d4ef35af16471ebc3ae3eba1a378e5"
+						target="_blank"
 						className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors"
 					>
 						<div className="bg-green-700 h-full p-6 flex items-center">
@@ -96,7 +98,8 @@ const Video = ({ lessonSlug }: VideoProps) => {
 					</a>
 
 					<a
-						href="#"
+						href="https://drive.google.com/drive/folders/1mxWnvlqmH7MbVRv2Na9xFNgCQCygM1iR"
+						target="_blank"
 						className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors"
 					>
 						<div className="bg-green-700 h-full p-6 flex items-center">
