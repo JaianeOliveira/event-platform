@@ -8,6 +8,7 @@ function Logo() {
 			height="34"
 			fill="none"
 			viewBox="0 0 237 34"
+			className="scale-[0.8] md:scale-1"
 		>
 			<path
 				fill="#fff"
