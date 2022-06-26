@@ -23,7 +23,7 @@ const Video = ({ lessonSlug }: VideoProps) => {
 	if (!data || !data.lesson) {
 		return (
 			<div className="flex flex-1 align-center justify-center">
-				<p>Carregando</p>
+				<p>Clique em uma aula para começar</p>
 			</div>
 		);
 	}
