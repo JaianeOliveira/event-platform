@@ -4,6 +4,7 @@ import {
 	DiscordLogo,
 	FileArrowDown,
 	Lightning,
+	SpinnerGap,
 } from 'phosphor-react';
 import Button from './common/Button';
 import '@vime/core/themes/default.css';
@@ -23,7 +24,7 @@ const Video = ({ lessonSlug }: VideoProps) => {
 	if (!data || !data.lesson) {
 		return (
 			<div className="flex flex-1 align-center justify-center">
-				<p>Clique em uma aula para começar</p>
+				<SpinnerGap className="animate-spin mt-20" size={32} />
 			</div>
 		);
 	}

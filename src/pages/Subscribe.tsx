@@ -1,3 +1,4 @@
+import { SpinnerGap } from 'phosphor-react';
 import { FormEvent, useState, ChangeEvent } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Logo } from '../components';
@@ -66,9 +67,15 @@ const Subscribe = () => {
 						<button
 							type="submit"
 							disabled={loading}
-							className="mt-4 bg-green-500 uppercase py-4 font-bold text-sm hover:bg-green-700 transition-colors rounded disabled:opacity-50"
+							className="mt-4 flex align-center gap-4 justify-center bg-green-500 uppercase py-4 font-bold text-sm hover:bg-green-700 transition-colors rounded disabled:opacity-50"
 						>
-							Garantir minha vaga
+							{loading && (
+								<SpinnerGap
+									className="animate-spin inline text-white"
+									size={20}
+								/>
+							)}
+							<p>Garantir minha vaga</p>
 						</button>
 					</form>
 				</div>
